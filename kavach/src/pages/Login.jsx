@@ -6,8 +6,8 @@ import Layout from '../components/Layout'
 const Login = () => {
   return (
     <Layout>
-      <div className="flex w-full h-[52rem] pt-[5.812rem] pl-[7.69rem]">
-        <div className="w-[50%]">
+      <div className="sm:flex sm:flex-row flex-col w-full sm:h-[52rem] sm:pt-[5.812rem] pt-[2rem] sm:pl-[7.69rem] px-16">
+        <div className="sm:w-[50%]">
           <div className="flex pt-[1.25rem] px-[7rem] justify-center max-w-2xl content-start text-[#171A21] bg-slate-50">
             <div className="block max-w-md rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 w-[28.375rem]">
               <p className="pb-[1.5rem] text-[#171A21] font-poppins text-xl font-bold">
@@ -46,7 +46,7 @@ const Login = () => {
                 {/* Policy no button */}
                 <button
                   type="submit"
-                  className="inline-flex w-full rounded-full justify-center items-center content-center mt-[1rem] bg-[#FFF] pt-[0.5rem] pb-[0.5rem] font-poppins font-medium  leading-normal text-[#6D7585] text-base border border-[#C2C7D1] border-solid hover:bg-slate-500 hover:text-white"
+                  className="inline-flex w-full rounded-full justify-center items-center content-center mt-[1rem] bg-[#FFF] pt-[0.5rem] pb-[0.5rem] font-poppins font-medium  leading-normal text-[#6D7585] sm:text-base text-sm border border-[#C2C7D1] border-solid hover:bg-slate-500 hover:text-white"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
@@ -55,23 +55,23 @@ const Login = () => {
                 {/* Login with email */}
                 <button
                   type="submit"
-                  className="inline-flex w-full rounded-full justify-center content-center mt-[1rem] bg-[#FFF] pt-[0.5rem] pb-[0.5rem] font-poppins font-medium text-base leading-normal text-[#6D7585] border border-[#C2C7D1] border-solid hover:bg-slate-500 hover:text-white"
+                  className="inline-flex w-full rounded-full justify-center content-center mt-[1rem] bg-[#FFF] pt-[0.5rem] pb-[0.5rem] font-poppins font-medium sm:text-base text-sm leading-normal text-[#6D7585] border border-[#C2C7D1] border-solid hover:bg-slate-500 hover:text-white"
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
                   Login With Email
                 </button>
-                <div className='flex mt-[2rem]'>
-                    <p className='font-poppins font-semibold text-sm'>Trouble signing in?</p>
+                <div className='sm:flex justify-center w-full flex text-center flex-col mt-[2rem]'>
+                    <p className=' text-center font-poppins font-semibold text-sm'>Trouble signing in?</p>
                     <Link className='ml-[1rem] font-poppins font-semibold text-sm' to="">Click Here</Link>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div className='w-[50%] pr-[9rem]'>
+        <div className='sm:w-[50%] flex flex-col lg:pr-[9rem]'>
           <img src={SheildIcon} alt="SheildIcon"/>
-          <div className='flex font-poppins font-bold justify-center text-[2rem] text-center'>
+          <div className='flex font-poppins font-bold justify-center sm:text-[2rem] pb-[2rem] text-center'>
             <p>Shielding What Matters
                   <br/>Most to You.</p>
           </div>

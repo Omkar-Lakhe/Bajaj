@@ -30,9 +30,9 @@ const Header = () => {
           <div className={`${
             !toggle ? "hidden" : "flex"
           } p-6 bg-gray-100 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-            <ul>
-              <li>
-
+            <ul className="list-none flex justify-center items-center flex-1 flex-col">
+              <li className="flex justify-center font-poppins font-medium cursor-pointer text-[16px] text-black" >
+                  <p>Help</p>
               </li>
             </ul>
           </div>
